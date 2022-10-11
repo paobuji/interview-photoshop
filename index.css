@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.head {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.left {
+    display: flex;
+    margin-right: 20px;
+}
+
+.box {
+    width: 160px;
+    height: 130px;
+    background-color: #275dae;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    border-radius: 5px 0 0 5px;
+}
+
+.box img {
+    width: 50px;
+}
+
+.box .boxtit {
+    color: white;
+    font-size: 16px;
+}
+
+.box .san {
+    
+}
+
+.box1 {
+    width: 420px;
+    height: 130px;
+    box-sizing: border-box;
+    border: 1px solid #275dae;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 0 5px 5px 0;
+}
+
+.box1>div {
+    width: 50%;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.headitem {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 {
+    width: 160px;
+    height: 130px;
+    box-sizing: border-box;
+    border: 1px solid #275dae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.box2.active{
+    background-color: #275dae;
+    color: white;
+}
+
+.box2.active>.san{
+    width: 0;
+    height: 0;
+    border: 15px solid #275dae;
+    border-color: transparent transparent transparent #275dae;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+}
+
+.body {
+    width: 950px;
+}
+
+.bodyleft {
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.bodyleft>div {
+    margin-right: 20px;
+}
+
+.bodyleft>div.active {
+    color: #275dae;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #275dae;
+}
+
+.bodymid{
+    height: 300px;
+}
+
+.bodymid>div:nth-child(n+2){
+    display: none;
+}
+
+.bodymid_item>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+.bodybottom {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.bodybottom .item {
+    width: 110px;
+    height: 34px;
+    border-radius: 17px;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 15px;
+}
+
+.bodybottom .item.active {
+    color: #275dae;
+    background-color: #e7f1ff;
+}
+
+.bodybottom img {
+    width: 8px;
+    height: 16px;
+    display: block;
+    margin-right: 5px;
+}
+
+.search {
+    position: relative;
+}
+
+.search .tit {
+    position: absolute;
+    font-size: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.search input {
+    width: 220px;
+    height: 30px;
+    outline: none;
+    padding-left: 50px;
+}
+
+.search button {
+    width: 50px;
+    height: 34px;
+    background-color: #275dae;
+    color: white;
+    border: none;
+    position: relative;
+    right: 10px;
+    top: 1px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container_right>.item {
+    width: 320px;
+    height: 74px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #eef6ff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container_right>.item>img{
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+.tit1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #275dae;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #275dae;
+    margin-top: 20px;
+    display: flex;
+}
+
+.swiperbox {
+    position: relative;
+}
+
+.swiper {
+    width: 1320px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.swiper-wrapper {
+    width: 310px;
+    height: 100px;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    left: -50px;
+    color: #e5e5e5;
+}
+
+.swiper-button-next {
+    position: absolute;
+    right: -50px;
+    color: #e5e5e5;
+}
+
+.tit2box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linearcolor {
+    width: 20px;
+    height: 5px;
+    background-color: #275dae;
+}
+
+.tit2 {
+    font-size: 20px;
+    color: #275dae;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.footer>div {
+    padding: 20px 45px;
+    border-radius: 5px;
+    background-color: #eef6ff;
+    color: black;
+}
+
+.footer>div.active {
+    background-color: #275dae;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.footer>div.active .triangle {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 10px solid #275dae;
+    border-color: #275dae transparent transparent transparent;
+}
+
+.footer_content {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_content>div {
+    margin-right: 60px;
+    margin-bottom: 40px;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.navi>div:nth-child(1) {
+    font-size: 18px;
+    font-weight: bold;
+    color: #275dae;
+    width: 300px;
+}
+
+.navi>div:nth-child(2) {
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.navi>div:nth-child(3) {
+    font-size: 18px;
+    font-weight: bold;
+    color: #275dae;
+    position: relative;
+}
+
+.navi>div:nth-child(3)>.triangle {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 8px solid #275dae;
+    border-color: #275dae transparent transparent transparent;
+}
+
+.navibox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navibox>div {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.swiper-button-prev:after{
+    font-size: 25px;
+}
+
+.swiper-button-next:after{
+    font-size: 25px;
+}
